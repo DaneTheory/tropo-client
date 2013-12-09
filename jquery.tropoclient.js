@@ -699,9 +699,9 @@ function Phono(config) {
     Phono.util.loggify("Phono", this);
 
     if(!config.apiKey) {
-        this.config.apiKey = prompt("Please enter your Phono API Key.\n\nTo get a new one sign up for a free account at: http://www.phono.com");
+        this.config.apiKey = prompt("Please enter your Tropo Client API Key.\n\nTo get a new one sign up for a free account at: http://www.developergarden.com");
         if(!this.config.apiKey) {
-            var message = "A Phono API Key is required. Please get one at http://www.phono.com";
+            var message = "A Tropo Client API Key is required. Please get one at http://www.developergarden.com";
             Phono.events.trigger(this, "error", {
                 reason: message
             });
@@ -8859,7 +8859,7 @@ JSEPAudio.prototype.createContainer = function() {
 })();
 
 
-   $.phono = function(config) {
+   $.tropoClient = function(config) {
       return new Phono(config);
    }
 
