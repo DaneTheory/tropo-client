@@ -7465,7 +7465,7 @@ JSEPAudio.prototype.createContainer = function() {
         }
 
         if (sdpObj.crypto) {
-            //Avoid for chrome 31+ sdp = sdp + _buildCrypto(sdpObj.crypto);
+            // Avoid for Chrome 31+ sdp = sdp + _buildCrypto(sdpObj.crypto);
         }
         if (sdpObj.fingerprint) {
             sdp = sdp + _buildFingerprint(sdpObj.fingerprint);
