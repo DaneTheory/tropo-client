@@ -13,12 +13,6 @@ More information about Tropo Client can be found at:
 
   http://www.developergarden.com/apis/docu-support/
 
-Tutorials, sample applications, videos and more are available at:
-
-  http://www.todo.com/demos
-
-  http://blog.todo.com/
-
 To stay up-to-date with what is happening with Tropo Client, you can follow:
 
   https://www.twitter.com/developergarden
