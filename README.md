@@ -16,6 +16,7 @@ More information about Tropo Client can be found at:
 To stay up-to-date with what is happening with Tropo Client, you can follow:
 
   https://www.twitter.com/developergarden
+  
   https://www.facebook.com/developergarden
 
 If you have questions or encounter issues using Tropo Client, please visit the 
