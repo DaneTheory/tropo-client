@@ -7944,7 +7944,7 @@ JSEPAudio.prototype.createContainer = function() {
       this.phone = phone;
       this.phono = phone.phono;
       this.audioLayer = this.phono.audio;
-      this.transport = this.audioLayer.transport(config);
+      this.transport = this.audioLayer.transport(Phono.util.extend({}, this.phono.config, config));
       this.connection = this.phono.connection;
 
       this.config = Phono.util.extend({
