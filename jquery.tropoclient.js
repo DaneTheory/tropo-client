@@ -5186,7 +5186,7 @@ function FlashAudio(phono, config, callback) {
         cirrus: "rtmfp://phono-fms1-ext.voxeolabs.net/phono",
         bridged: false,
         reliable: false,
-        media: {audio:true,video:true},
+        media: {audio:true,video:false},
         watchdog: 25000
     }, config);
 
@@ -7053,6 +7053,7 @@ JSEPAudio.prototype.createContainer = function() {
     .attr("id","_phono-audio-webrtc" + (JSEPAudio.count++))
     .attr("autoplay","autoplay")
     .appendTo("body");
+    webRTC.hide();
 
     var containerId = $(webRTC).attr("id");
     return containerId;
