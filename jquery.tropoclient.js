@@ -6841,11 +6841,16 @@ JSEPAudio.prototype.permission = function() {
 JSEPAudio.prototype.transport = function(config) {
     var pc;
     var inboundOffer;
-    var configuration = {
-        iceServers:[ {
-                url:JSEPAudio.stun
-            } ]
-    };
+    var configuration;
+    if(config.iceServers) {
+        configuration = {iceServers: config.iceServers};
+    } else {
+        configuration = {
+            iceServers:[ {
+                    url:JSEPAudio.stun
+                } ]
+        };
+    }
     var offerconstraints;
     var peerconstraints;
     var remoteContainerId;
